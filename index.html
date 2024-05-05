@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>오늘밤 제품소개</title>
+
+	<style type="text/css">
+
+		/*폰트*/
+			@font-face {
+		    font-family: 'Pretendard-Bold';
+		    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+		    font-weight: 700;
+		    font-style: normal;}
+			@font-face {
+		    font-family: 'Pretendard-Regular';
+		    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+		    font-weight: 400;
+		    font-style: normal;}
+		    @font-face {
+		    font-family: 'Pretendard-Light';
+		    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+		    font-weight: 300;
+		    font-style: normal;}
+	    	@font-face {
+	    	font-family: 'KimjungchulMyungjo-Bold';
+	    	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulMyungjo-Bold.woff2') format('woff2');
+	    	font-weight: 700;
+	    	font-style: normal;}
+	    	@font-face {
+	    	font-family: 'KimjungchulMyungjo-Regular';
+	    	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulMyungjo-Regular.woff2') format('woff2');
+	    	font-weight: 400;
+	    	font-style: normal;}
+	        	@font-face {
+	    	font-family: 'KimjungchulMyungjo-Light';
+	    	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulMyungjo-Light.woff2') format('woff2');
+	    	font-weight: 300;
+	    	font-style: normal;}
+	    	@font-face {
+	    	font-family: 'Cafe24Shiningstar';
+	    	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Shiningstar.woff') format('woff');
+	    	font-weight: normal;
+	    	font-style: normal;}
+
+	    	html{font-family: Pretendard-Regular; font-style: 'normal;'; fo word-break: keep-all; display: block; background: black; scroll-behavior: smooth;}
+			body,h1,h2,h3,h4,h5,p,ul,ol,header,block{margin: 0; padding: 0;}
+			div{margin: 0; padding: 0;}
+			.wrap {width: 1000px; position: relative; margin: auto; }
+			.flex{display: flex; align-items: center; justify-content: space-between;}
+			.ul{}
+
+			/*section*/
+			.t_4{text-align: center; display: block; padding-bottom: 30px; padding-top: 300px; font-size: 3rem; color: white;}
+			.Bombs{background: black; padding-top: 10px; padding-bottom: 10px;}
+
+			.Moon{padding-top: 800px; padding-left: 500px; padding-bottom: 20px; }
+			.Moon_2{background: #04BEAC; margin-top: 30px; padding-bottom: 10px; position: relative;  }
+			.Bathroom{display: block; margin: auto;}
+			.Moon_Back{display: block; margin: auto;}
+
+			.img_A {display: flex; margin: auto; list-style: none; justify-content: center;} 
+			.B_A{display: flex; align-items: center; padding-left: 150px;}
+
+			.Forest_2{background: #576504; margin-top: 30px; padding-bottom: 10px; position: relative;}
+			.Rain_2{background: #A07B9B; margin-top: 30px; padding-bottom: 10px; position: relative;}
+			.Gyul_2{background: #DE9744; margin-top: 30px; padding-bottom:10px; position: relative;}
+
+			/*Gif*/
+			.G{position: absolute; margin-left: 280px; padding-top: 440px; width: 40%;
+				 animation: move 1s ease-in 0s infinite alternate;}
+			.G_2{position: absolute; margin-left: 280px; padding-top: 500px; width: 37%; animation: move 1s ease-in 0s infinite alternate;}
+			.G_3{position: absolute; margin-left: 270px; padding-top: 450px; width: 38%;
+				animation: move 1s ease-in 0s infinite alternate;}
+			.G_4{position: absolute; margin-left: 270px; padding-top: 500px; width: 40%;
+				animation: move 1s ease-in 0s infinite alternate;}
+			
+
+			/*footer*/
+			.foot{padding-bottom: 600px;}
+			.Footer_box{padding-top: 50px;}
+			.s7 {background: black; position: relative; top: 800px; bottom: px; }
+			.pij{margin-bottom: 0px; list-style:none;}
+			.flex_1{display: flex; justify-content: space-between; padding-top: 50px; padding-bottom: 40px;
+				font-size: 16px; position: relative;}
+			.flex_2{padding-top: 10px; padding-bottom: 10px;}
+			.flex_3{display: flex; justify-content: space-between; padding-top: 0px; padding-bottom: 120px;
+				font-size: 16px; position: relative;}
+			.p_l{color: lightgray;}
+			.p_i{color: lightgray; font-size: 4rem; font-family: KimjungchulMyungjo-Light; font-style: normal; line-height: 6.5rem; padding-top: 30px;}
+			.p_k{color: lightgray; padding-top: 3rem; padding-left: 280px;
+				font-size: 2rem; font-family: KimjungchulMyungjo-Light; font-style: normal;}
+
+			.Suggest_2{padding-top: 5px; animation: move 1s ease-in 0s infinite alternate;}
+			.Suggest_3{padding-top: 15px; animation: move 1s ease-in 0s infinite alternate;}
+			.Suggest{animation: move 1s ease-in 0s infinite alternate;}
+        
+@keyframes move {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(15px);
+    }
+
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<section>
+		<div class="wrap">
+			<a id="tag1"></a>
+			<div>
+				<h1 class="t_4">여행자님께 추천하는 BEST 여행지 4!</h1>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="Bombs">
+			<div class="wrap">
+					<ul class="flex">
+						<li>
+							<a href="#target-section">
+							<img src="Bombs/Moon.png" class="Suggest">
+							</a>
+						</li>
+						<li>
+							<a href="#target-section_2">
+							<img src="Bombs/Fairy.png" class="Suggest_2">
+							</a>
+						</li>
+						<li>
+							<a href="#target-section_3">
+							<img src="Bombs/Rain.png" class="Suggest">
+							</a>
+						</li>
+						<li>
+							<a href="#target-section_4">
+							<img src="Bombs/Shower.png" class="Suggest_3">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<img src="Bomb_G/Uni.gif" class="G">
+		
+		<div class="wrap">
+			<div id="target-section" class="Moon">
+				<p style="color: lightgray; font-size: 3rem; padding-left: 0px;">똑똑!</p>
+				<p style="color: #04BEAC; font-size: 3rem; padding-left: 0px; font-family: Pretendard-Bold; font-style: normal;">'OPEN THE MOON'</p>
+				<p style="color: lightgray; font-size: 1.3rem; padding-left: 0px;padding-top: 15px; line-height: 1.7rem; font-family: Pretendard-Bold; font-style: normal;">공허한 우주의 향기와 눈부신 지구의 색을 담다.<br>어디서도 느낄 수 없는 무중력, 사해에서 영감을 얻은 배쓰밤.</p>
+				<p style="color: #04BEAC; font-size: 1.5rem; padding-left: 0px; padding-top: 50px;">이럴 때 추천해!</p>
+				<p style="color: lightgray; font-size: 2rem; padding-left: 0px; padding-top: 10px; line-height: 2.5rem; font-family: Pretendard-Bold; font-style: normal;">"오늘은 달에서 지구를<br>바라보며 한 잔 하고 싶군"</p>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="Moon_2">
+			<div class="wrap">
+				<ul class="img_A">
+					<li>
+						<img src="Background/Bathroom.png" class="Bathroom">
+						<p style="color: black; font-size: 2rem; font-family: Pretendard-Regular; font-style: normal; padding-top: 10px;" align="center">[BEFORE]</p>
+
+					</li>
+					<li>
+						<img src="Background/Moon_Back.png" class="Moon_Back">
+						<p style="color: black; font-size: 2rem; font-family: Pretendard-Regular; font-style: normal; padding-top: 10px;" align="center">[AFTER]</p>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</section>
+	<section>
+		<img src="Bomb_G/Forest.gif" class="G_2">
+		<div class="wrap">
+			<div id="target-section_2" class="Moon">
+				<p style="color: lightgray; font-size: 3rem; padding-left: 0px; ">소근소근!</p>
+				<p style="color: #576504; font-size: 3rem; padding-left: 0px;  font-family: Pretendard-Bold; font-style: normal;">'FOREST FAIRY'</p>
+				<p style="color: lightgray; font-size: 1.3rem; padding-left: 0px;  padding-top: 15px; line-height: 1.7rem; font-family: Pretendard-Bold; font-style: normal;">폐가 터질 정도의 나무향 속에 볕뉘의 따스함을 담다.<br>울창한 숲 속에 누워 느끼는<br>바람과 햇볕의 향기를 구현하다.</p>
+				<p style="color: #576504; font-size: 1.5rem; padding-left: 0px;  padding-top: 50px;">이럴 때 추천해!</p>
+				<p style="color: lightgray; font-size: 2rem; padding-left: 0px;  padding-top: 10px; line-height: 2.5rem; font-family: Pretendard-Bold; font-style: normal;">"숲 요정처럼 하루종일<br> 나무에 둘러쌓여<br>호흡하고 싶어"</p>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="Forest_2">
+			<div class="wrap">
+				<ul class="img_A flex">
+					<li>
+						<img src="Background/Bathroom.png" class="Bathroom">
+						<p style="color: black; font-size: 2rem; font-family: Pretendard-Regular; font-style: normal; padding-top: 10px;" align="center">[BEFORE]</p>
+
+					</li>
+					<li>
+						<img src="Background/Fairy_Back.png" class="Moon_Back">
+						<p style="color: black; font-size: 2rem; font-family: Pretendard-Regular; font-style: normal; padding-top: 10px;" align="center">[AFTER]</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section>
+		<img src="Bomb_G/Rain.gif" class="G_3">
+		<div class="wrap">
+			<div id="target-section_3" class="Moon">
+				<p style="color: lightgray; font-size: 3rem;">토독토독!</p>
+				<p style="color: #A07B9B; font-size: 3rem; font-family: Pretendard-Bold; font-style: normal;">'SPRING & RAIN'</p>
+				<p style="color: lightgray; font-size: 1.3rem; padding-top: 15px; line-height: 1.7rem; font-family: Pretendard-Bold; font-style: normal;">새벽녘 내리는 비에 젖은 공기의 향을 담다.<br>어딘가 부딪치는 빗방울의 소리가 욕조를 가득 채워 울린다.</p>
+				<p style="color: #A07B9B; font-size: 1.5rem; padding-top: 50px;">이럴 때 추천해!</p>
+				<p style="color: lightgray; font-size: 2rem; padding-top: 10px; line-height: 2.5rem; font-family: Pretendard-Bold; font-style: normal;">"봄향기가, 봄비와 함께<br> 내리는 밤이 그리워"</p>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="Rain_2">
+			<div class="wrap">
+				<ul class="img_A flex">
+					<li>
+						<img src="Background/Bathroom.png" class="Bathroom">
+						<p style="color: black; font-size: 2rem; font-family: Pretendard-Regular; font-style: normal; padding-top: 10px;" align="center">[BEFORE]</p>
+
+					</li>
+					<li>
+						<img src="Background/Rain_Back.png" class="Moon_Back">
+						<p style="color: black; font-size: 2rem; font-family: Pretendard-Regular; font-style: normal; padding-top: 10px;" align="center">[AFTER]</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section>
+		<img src="Bomb_G/Gyul.gif" class="G_4">
+		<div class="wrap">
+			<div id="target-section_4" class="Moon">
+				<p style="color: lightgray; font-size: 3rem;">따끈따끈!</p>
+				<p style="color: lightgray; color: #DE9744; font-size: 3rem; font-family: Pretendard-Bold; font-style: normal;">'[GUYL] SHOWER'</p>
+				<p style="color: lightgray; font-size: 1.3rem; padding-top: 15px; line-height: 1.7rem; font-family: Pretendard-Bold; font-style: normal;">후끈 달아오르는 전기장판 속에서 먹는 향긋하고 새콤한 귤을 담다.<br>포근한 이불의 촉감이 따뜻한 욕조 속에서 느껴지다.</p>
+				<p style="color: #DE9744; font-size: 1.5rem; padding-top: 50px;">이럴 때 추천해!</p>
+				<p style="color: lightgray; font-size: 2rem; padding-top: 10px; line-height: 2.5rem; font-family: Pretendard-Bold; font-style: normal;">"한겨울에 전기장판<br> 켜놓고 이불 속에서<br>귤 까먹는 게 최고지"</p>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="Gyul_2">
+			<div class="wrap">
+				<ul class="img_A flex">
+					<li>
+						<img src="Background/Bathroom.png" class="Bathroom">
+						<p style="color: black; font-size: 2rem; font-family: Pretendard-Regular; font-style: normal; padding-top: 10px;" align="center">[BEFORE]</p>
+
+					</li>
+					<li>
+						<img src="Background/Shower_Back.png" class="Moon_Back">
+						<p style="color: black; font-size: 2rem; font-family: Pretendard-Regular; font-style: normal; padding-top: 10px;" align="center">[AFTER]</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+<footer class="s7">
+	<div class="wrap">
+		<ul class="pij flex_1">
+			<li class="p_i">BATHBOMB</span><br><span class="p_j">오늘밤</span></li>
+			<li class="p_k">어디로든<br>힐링을 위해<br>떠나고 싶은<br>당신에게<br>선물할게요</li>
+			<li><img src="Footer/Footer_box.png" class="Footer_box"></li>
+		</ul>
+	</div>
+	<div class="wrap flex_2">
+		<hr style="border-width:1px 0 0 0; border-color:white;"> 
+	</div>
+	<div class="wrap">
+		<ul class="pij flex_3">
+			<li class="p_l">
+				<b span style="font-family: KimjungchulMyungjo-Light; font-style: normal;">SURVICE</b><br>
+				<b span style="font-family: KimjungchulMyungjo-Light; font-style: normal;">1: 1 Chat</b><br>
+				<b span style="font-family: KimjungchulMyungjo-Light; font-style: normal;">Q & A</b><br>
+				<b span style="font-family: KimjungchulMyungjo-Light; font-style: normal;">Review</b>
+			</li>
+			<li class="p_l">
+				<b span style="font-family: KimjungchulMyungjo-Light; font-style: normal;">ABOUT</b><br>
+				<b span style="font-family: KimjungchulMyungjo-Light; font-style: normal;">Brand</b><br>
+				<b span style="font-family: KimjungchulMyungjo-Light; font-style: normal;">Product</b>
+			</li>
+			<li class="p_l">
+				<b span style="font-family: KimjungchulMyungjo-Light; font-style: normal;">CONTACT</b><br>
+				<b span style="font-family: KimjungchulMyungjo-Light; font-style: normal;">kkjh0825@seoultech.ac.kr</b>
+			</li>
+			<li class="p_l">
+				<a href="#tag1" span style="font-family: KimjungchulMyungjo-Regular; font-style: normal; text-decoration: none; color: white;">BACK TO TOP</a>
+			</li>
+		</ul>
+	</div>
+</footer>
+
+</body>
+</html>
